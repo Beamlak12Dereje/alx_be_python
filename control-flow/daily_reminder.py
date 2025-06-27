@@ -5,13 +5,13 @@ def main():
 
     match priority:
         case "high":
-            reminder = f"Reminder: '{task}' is a high priority task"
+            reminder = "Reminder: '" + task + "' is a high priority task"
         case "medium":
-            reminder = f"Reminder: '{task}' is a medium priority task"
+            reminder = "Reminder: '" + task + "' is a medium priority task"
         case "low":
-            reminder = f"Note: '{task}' is a low priority task"
+            reminder = "Note: '" + task + "' is a low priority task"
         case _:
-            reminder = f"Note: '{task}' has an unknown priority level"
+            reminder = "Note: '" + task + "' has an unknown priority level"
 
     if time_bound == "yes" and priority in ("high", "medium"):
         reminder += " that requires immediate attention today!"
