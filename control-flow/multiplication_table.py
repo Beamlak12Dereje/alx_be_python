@@ -1,30 +1,9 @@
 def main():
-    # Prompt the user for the first number
-    num1 = float(input("Enter the first number: "))
-    # Prompt the user for the second number
-    num2 = float(input("Enter the second number: "))
-    # Ask the user which operation to perform
-    operation = input("Choose the operation (+, -, *, /): ")
+    number = int(input("Enter a number to see its multiplication table: "))
 
-    # Use match-case to decide the operation
-    match operation:
-        case "+":
-            result = num1 + num2
-            print(f"The result is {result}.")
-        case "-":
-            result = num1 - num2
-            print(f"The result is {result}.")
-        case "*":
-            result = num1 * num2
-            print(f"The result is {result}.")
-        case "/":
-            if num2 == 0:
-                print("Cannot divide by zero.")
-            else:
-                result = num1 / num2
-                print(f"The result is {result}.")
-        case _:
-            print("Invalid operation selected.")
+    for i in range(1, 11):
+        product = number * i
+        print(f"{number} * {i} = {product}")
 
 if __name__ == "__main__":
     main()
