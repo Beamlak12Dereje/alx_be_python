@@ -1,10 +1,12 @@
-# match_case_calculator.py
-
 def main():
+    # Prompt the user for the first number
     num1 = float(input("Enter the first number: "))
+    # Prompt the user for the second number
     num2 = float(input("Enter the second number: "))
+    # Ask the user which operation to perform
     operation = input("Choose the operation (+, -, *, /): ")
 
+    # Use match-case to decide the operation
     match operation:
         case "+":
             result = num1 + num2
